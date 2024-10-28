@@ -8,8 +8,8 @@ const { bot, client } = Astro.props;
     // @ts-nocheck   
     window.botpressWebChat.init({
         // Replace <your-bot-id> and <your-client-id> with your actual bot and client IDs
-        "botId": "<your-bot-id>",
-        "clientId": "<your-client-id>",
+        "botId": bot,
+        "clientId": client,
 
         // Set the URL for the Botpress WebChat JavaScript file and the messaging server
         "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
