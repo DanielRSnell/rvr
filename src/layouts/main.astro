@@ -1,5 +1,8 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
+import Chat from '../components/chat.astro';
+
+const { bot, client } = Astro.props;
 
 ---
 
@@ -13,5 +16,5 @@ import { ViewTransitions } from 'astro:transitions';
     </div>
   </body>
       <script is:inline src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-<script is:inline src="https://files.bpcontent.cloud/2024/10/10/10/20241010103729-6L49Y1FR.js"></script>
+      <Chat />
 </html>
