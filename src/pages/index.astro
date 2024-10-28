@@ -1,16 +1,21 @@
 ---
+import Main from '../layouts/main.astro';
+import Chat from '../components/chat.astro';
 
+const bot = '21430e97-d746-4c1d-9605-0c829c401422';
+const client = '088a0038-04d7-4bb6-8150-e9ee267b62f9';
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Main>
+<div class="join bg-base-300 p-0.5 rounded-lg">
+  <a href="/product1" class="join-item btn btn-sm no-animation bg-base-100 text-base-content hover:bg-base-100 border-none">
+    Product 1
+  </a>
+  <a href="/product2" class="join-item btn btn-sm no-animation bg-transparent text-base-content/70 hover:text-base-content border-none">
+    Product 2
+  </a>
+  <a href="/product3" class="join-item btn btn-sm no-animation bg-transparent text-base-content/70 hover:text-base-content border-none">
+    Product 3
+  </a>
+</div>
+	<Chat bot={bot} client={client} />
+</Main>

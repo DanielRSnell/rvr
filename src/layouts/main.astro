@@ -1,0 +1,16 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+
+---
+
+<html>
+    <head>
+        <ViewTransitions />
+        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    </head>
+  <body>
+    <div class="max-w-md mx-auto flex flex-col gap-4 py-12">
+        <slot />
+    </div>
+  </body>
+</html>
